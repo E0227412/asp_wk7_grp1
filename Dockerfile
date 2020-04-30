@@ -17,6 +17,8 @@ RUN apt install apt-transport-https -y
 
 RUN apt-get update
 
+RUN apt install dotnet-runtime-deps-3.1 -y
+
 RUN apt install dotnet-runtime-3.1 -y
 
 RUN apt install aspnetcore-runtime-3.1 -y
