@@ -17,11 +17,9 @@ RUN apt install apt-transport-https -y
 
 RUN apt-get update
 
-RUN apt install dotnet-runtime-deps-3.1 -y
+RUN wget -q http://ftp.us.debian.org/debian/pool/main/i/icu/libicu57_57.1-6+deb9u4_amd64.deb
 
-RUN apt install dotnet-runtime-3.1 -y
-
-RUN apt install aspnetcore-runtime-3.1 -y
+RUN dpkg -i libicu57_57.1-6+deb9u4_amd64.deb
 
 RUN apt install dotnet-sdk-3.1 -y
 
